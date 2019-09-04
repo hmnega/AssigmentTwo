@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>my Address</title>
+    <script>
+        function myAddress(){
+             let name  = document.getElementById("nameInputBox").value;
+             let street = document.getElementById("streetInputBox").value;
+             let city = document.getElementById("cityInputBox").value;
+             let state  = document.getElementById("stateInputBox").value;
+             let zip  = document.getElementById("zipInputBox").value;
+
+             document.getElementById("outputDiv").innerHTML= name+"<br> " + street+"<br> " + city + " ,"+ state +" "+zip;
+
+            
+        }
+    </script>
+</head>
+<body>  
+
+   <br> name <input type ="text" id="nameInputBox"><br>
+   <br>street <input type ="text" id="streetInputBox"><br>
+   <br> city <input type ="text" id="cityInputBox">        
+   state  <input type ="text" id="stateInputBox">   
+   zip  <input type ="number" id="zipInputBox">
+
+   <br><br> <button onclick="myAddress()">Make Address</button><br>
+
+  
+   <!-- </textarea> -->
+
+   <!-- <button type = "button" onclick= "MyAddress()"></button>  -->
+    <div id= "outputDiv" ></div>
+   <!-- <div id= "outputDiv" ></div>
+   <div id= "outputDiv" ></div> -->
+
+
+</body>
+</html>
